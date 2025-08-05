@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mozilla+Headline:wght@200..700&display=swap');
+
+
+
 body,
 html {
   height: 100%;
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Mozilla Headline", sans-serif;
   margin: 0;
   background-color: #f0f1f5;
   background-image: url("../img/casa.webp");
@@ -12,6 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 body .bg {
   clip-path: polygon(0 0, 35% 0, 65% 100%, 0% 100%);
   background-color: #4a4e69;
@@ -24,13 +29,14 @@ body .bg {
 
 main {
   color: black;
+  height: 100vh;
   display: grid;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas: "card" "primary";
-  align-items: start;
+    grid-template-columns: 2fr 2fr;
+  grid-template-areas: "card primary";
+  align-items: center;
 }
 
-main section.card {
+.card {
   grid-area: card;
   background-color: #b5b7ca;
   margin: 1em auto;
@@ -40,13 +46,15 @@ main section.card {
   width: 80%;
 }
 
-main section.card ul {
+.card ul {
   list-style-type: none;
 }
-main section.card ul li {
+
+.card ul li {
   margin-bottom: 10px;
 }
-main section.card ul li .circulo {
+
+.card ul li .circulo {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -54,25 +62,29 @@ main section.card ul li .circulo {
   border-radius: 50%;
   margin-right: 10px;
 }
-main section.card ul li strong {
+
+.card ul li strong {
   display: inline-block;
   margin-left: 40px;
 }
-main section.primary {
+
+.primary {
   grid-area: primary;
   padding: 15px;
 }
 
-main section.primary h1 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 4em;
+.primary h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 5em;
+  font-weight: 900;
+  text-shadow: 10px 8px 15px #fff;
 }
 
-main section.primary p {
+.primary p {
   font-size: 1.4em;
 }
 
-main section.primary a {
+.primary a {
   background-color: #b5b7ca;
   color: black;
   border-radius: 15px;
@@ -87,36 +99,40 @@ main section.primary a {
 
 
 
-@media (min-width: 992px) {
-  main section.primary a {
+@media (max-width: 992px) {
+
+  .primary a {
     display: inline-block;
     padding: 15px;
   }
  
-    body .bg {
-      clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+  body .bg {
+    clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 70% auto;
-        grid-template-rows: 100%;
-        grid-template-areas: "primary card";
-      }
+  main {
+    display: grid;
+    grid-template-columns: 70% ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "primary"
+                             "card";
+    justify-content: center;
+    align-items: center;
+  }
 
-    main section.card {
+  .card {
       align-self: flex-end;
       margin: 1em;
-    }
+  }
 
-    main section.primary h1 {
-      font-size: 6em;
-    }
+  .primary h1 {
+    font-size: 6em;
+  }
 
-    main section.primary {
-      text-align: left;
-      margin: 4em 0 0 4em;
-    }
+  .primary {
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
 
 }
 
