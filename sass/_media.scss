@@ -1,5 +1,5 @@
-@mixin other{
-  @media (max-width: 992px) {
+@mixin pc{
+  @media screen and (max-width: 992px){
     @content;
   }
 }

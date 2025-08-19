@@ -1,19 +1,18 @@
 .card {
-  grid-area: card;
-  background-color: #b5b7ca;
-  margin: 1em auto;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  width: 80%;
-
-  @include other{
-        align-self: flex-end;
-        margin: 1em;
-    }
+    grid-area: card;
+    background-color: #b5b7ca;
+    margin: 1em auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 80%;
+        @include pc{
+            align-self: flex-end;
+            margin: 1em;
+        }
 
     ul {
-    list-style-type: none;
+        list-style-type: none;
 
         li {
         margin-bottom: 10px;
