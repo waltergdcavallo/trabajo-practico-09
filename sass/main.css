@@ -76,6 +76,19 @@
   }
 }
 
+.botonsitos {
+  background-color: #35384b;
+  border-color: #35384b;
+  color: #b5b7ca;
+}
+.botonsitos:hover {
+  transition: 1.5s;
+  scale: 1.05;
+  background-color: #b5b7ca;
+  border-color: #b5b7ca;
+  color: #35384b;
+}
+
 body {
   font-family: "Mozilla Headline", sans-serif;
   margin: 0;
