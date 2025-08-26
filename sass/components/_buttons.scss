@@ -1,10 +1,12 @@
 .botonsitos{
     background-color: #35384b;
     border-color: #35384b;
+    color: #b5b7ca;
     &:hover{
         transition: 1.5s;
         scale: 1.050;
-        background-color: #35384b;
-        border-color: #35384b;
+        background-color:#b5b7ca;
+        border-color: #b5b7ca;
+        color: #35384b;
     }
 }
