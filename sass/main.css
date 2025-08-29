@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mozilla+Headline:wght@200..700&display=swap");
+.dark-mode {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+  transition: 1s;
+}
+.dark-mode .card, .dark-mode .modal-content {
+  background: #222 !important;
+  color: #f1f1f1 !important;
+  transition: 1s;
+}
+.dark-mode .bg {
+  background-image: url("../../img/casa.webp");
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+.dark-mode .primary {
+  background: #222 !important;
+  color: #f1f1f1 !important;
+  border-radius: 50%;
+  padding: 15%;
+  transition: 1s;
+}
+.dark-mode .primary h1 {
+  text-align: center;
+}
+.dark-mode .modal-body {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+.dark-mode .boton-oscuro {
+  transition: 1s;
+  background-color: #f1f1f1;
+}
+.dark-mode .boton-oscuro .bi-moon {
+  display: none;
+}
+.dark-mode .boton-oscuro .bi-sun {
+  color: #181818;
+  display: block;
+}
+
+.boton-oscuro {
+  transition: 1s;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.bi-sun {
+  display: none;
+}
+
 .card {
+  transition: 1s;
   grid-area: card;
   background-color: #b5b7ca;
   margin: 1em auto;
@@ -34,6 +88,7 @@
 }
 
 .primary {
+  transition: 1s;
   grid-area: primary;
   padding: 15px;
 }

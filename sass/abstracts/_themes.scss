@@ -1,0 +1,53 @@
+.dark-mode {
+    background: #181818 !important;
+    color: #f1f1f1 !important;
+    transition: 1s;
+    .card, .modal-content{
+        background: #222 !important;
+        color: #f1f1f1 !important;
+            transition: 1s;
+    }
+
+    .bg {
+        background-image: url('../../img/casa.webp');
+        background-size: cover;
+        background-position: center;
+            transition: 1s;
+    }
+    .primary{
+        background: #222 !important;
+        color: #f1f1f1 !important;
+        border-radius: 50%;
+        padding: 15%;
+            transition: 1s;
+        h1{
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #181818 !important;
+        color: #f1f1f1 !important;
+    }
+    .boton-oscuro{
+        transition: 1s;
+        background-color: #f1f1f1;
+        .bi-moon{
+            display: none;
+        }
+        .bi-sun{
+        color: #181818;
+        display: block;
+        }
+    }
+
+}
+.boton-oscuro{
+    transition: 1s;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.bi-sun{
+    display: none;
+}
